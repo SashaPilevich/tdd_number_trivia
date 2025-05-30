@@ -1,0 +1,14 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'number_trivia_model.freezed.dart';
+
+part 'number_trivia_model.g.dart';
+
+@freezed
+abstract class NumberTriviaModel with _$NumberTriviaModel {
+  const factory NumberTriviaModel({required String text, required int number}) =
+      _NumberTriviaModel;
+
+  factory NumberTriviaModel.fromJson(Map<String, dynamic> json) =>
+      _$NumberTriviaModelFromJson(json);
+}

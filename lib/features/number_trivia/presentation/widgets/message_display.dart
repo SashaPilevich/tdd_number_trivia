@@ -8,7 +8,6 @@ class MessageDisplay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // Third of the size of the screen
       height: MediaQuery.of(context).size.height / 3,
       child: Center(
         child: SingleChildScrollView(

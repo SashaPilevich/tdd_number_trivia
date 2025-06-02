@@ -20,8 +20,8 @@ class NumberTriviaPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(10),
               child: Column(
+                spacing: 20,
                 children: <Widget>[
-                  SizedBox(height: 10),
                   BlocBuilder<NumberTriviaBloc, NumberTriviaState>(
                     builder: (BuildContext context, NumberTriviaState state) {
                       if (state is Empty) {
@@ -36,7 +36,6 @@ class NumberTriviaPage extends StatelessWidget {
                       return SizedBox.shrink();
                     },
                   ),
-                  SizedBox(height: 20),
                   TriviaControls(),
                 ],
               ),

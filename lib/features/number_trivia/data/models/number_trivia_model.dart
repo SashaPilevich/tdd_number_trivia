@@ -1,14 +1,13 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:tdd_number_trivia/features/number_trivia/domain/entities/number_trivia.dart';
 
-part 'number_trivia_model.freezed.dart';
+class NumberTriviaModel extends NumberTrivia {
+  const NumberTriviaModel({required super.number, required super.text});
 
-part 'number_trivia_model.g.dart';
+  factory NumberTriviaModel.fromJson(Map<String, dynamic> json) {
+    return NumberTriviaModel(number: json['number'] as int, text: json['text'] as String);
+  }
 
-@freezed
-abstract class NumberTriviaModel with _$NumberTriviaModel {
-  const factory NumberTriviaModel({required String text, required int number}) =
-      _NumberTriviaModel;
-
-  factory NumberTriviaModel.fromJson(Map<String, dynamic> json) =>
-      _$NumberTriviaModelFromJson(json);
+  Map<String, dynamic> toJson() {
+    return {'number': number, 'text': text};
+  }
 }

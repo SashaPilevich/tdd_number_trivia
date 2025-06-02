@@ -1,7 +1,5 @@
 # Exclude Auto Generated Code
-**/*.g.dart
-**/*.gr.dart
-**/*.freezed.dart
+**/*.mocks.dart
 # Miscellaneous
 *.class
 *.log
@@ -47,4 +45,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-/test/features/number_trivia/data/repositories/number_trivia_repository_impl_test.mocks.dart

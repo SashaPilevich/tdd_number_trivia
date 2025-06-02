@@ -1,3 +1,5 @@
+# Exclude Auto Generated Code
+**/*.mocks.dart
 # Miscellaneous
 *.class
 *.log

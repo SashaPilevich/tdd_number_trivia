@@ -40,6 +40,7 @@ class _TriviaControlsState extends State<TriviaControls> {
         ),
         SizedBox(height: 10),
         Row(
+          spacing: 10,
           children: <Widget>[
             Expanded(
               child: ElevatedButton(
@@ -51,7 +52,6 @@ class _TriviaControlsState extends State<TriviaControls> {
                 child: Text('Search'),
               ),
             ),
-            SizedBox(width: 10),
             Expanded(
               child: ElevatedButton(
                 onPressed: dispatchRandom,

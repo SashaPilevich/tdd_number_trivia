@@ -14,7 +14,8 @@ abstract class NumberTriviaRemoteDataSource {
 class NumberTriviaRemoteDataSourceImpl implements NumberTriviaRemoteDataSource {
   final http.Client _client;
 
-  NumberTriviaRemoteDataSourceImpl({required http.Client client}) : _client = client;
+  NumberTriviaRemoteDataSourceImpl({required http.Client client})
+    : _client = client;
 
   @override
   Future<NumberTriviaModel> getConcreteNumberTrivia(int number) =>
